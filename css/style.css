@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+  --ff-primary: 'Ibarra Real Nova', serif;
+
+  --fw-reg:var(--ff-primary)
+  --ff-bold:var(--ff-primary)
+
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1rem;
+}
+@media (min-width: 800px){
+  :root {
+    --fs-h1: 3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
+  }
+}
+
+/* General styles */
+
+body{
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  padding-bottom:200px;   /* Height of the footer */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 { font-size: var(--fs-h1)}
+h2 { font-size: var(--fs-h2)}
+h3 { font-size: var(--fs-h3)}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid black;
+  background-color: white;
+  display: flex; /* or inline-flex */
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+.datetime{
+  font-size: var(--fs-body);
+}
+
+.contact{
+  line-height: 1.1;
+
+}
