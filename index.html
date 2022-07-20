@@ -2,89 +2,93 @@
 <html lang="eng">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>My page</title>
-    <script src="https://kit.fontawesome.com/a520937060.js" crossorigin="anonymous"></script>
+    <title>Tribute page</title>
+    <meta name="viewport" width="device-width, inital-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="css/style.css">
     <script src="js/getDate.js" defer></script>
-  </head>
+    </head>
 <body> 
-  <header>
-    <div class="logo">
+  <header class="primary-header">
+    <div class="head-container">
+      <a href="#"><img src="images/images/Logo.svg" alt="Adam logo"></a>
     </div>
-    <button class="nav-toggle" aria-label="toggle navigation">
-    <span class="hamburger"> </span>
-  </button>
-  <nav class="nav">
-    <ul class="nav_list">
-      <li class="nav_item"> <a href="a" class="nav_link">About me</a></li>
-      <li class="nav_item"> <a href="b" class="nav_link">Contact</a></li>
-
-    </ul>
-  </nav>
   </header>
-  <!-- intr -->
-  <section class="Intro" id="home">
-    <h1 class="section_title section_title-intro">
-    Jim Safford
-    </h1>
-    <p class="section_subtitle section_subtitle-intro">Developer, Product Manager, Economist</p>
-    <img src="Images/portrait.jpeg" alt="portrait">
+  
+  <main>
+    <section>
+      <div class="container grey-background">
+       <div class="content twin-columns padding">
+        
+        <div>
+          <h1 class="h1">
+            Galaxy Brain
+          </h1>
+          <p class="p">Adam Tooze holds the Shelby Cullom Davis chair of History at Columbia University and serves as Director of the European Institute. In 2019, Foreign Policy Magazine named him one of the top Global Thinkers of the decade. He has the most incredible talent for making very disparate strains of the global economy come together, and make a little bit of sense.
+
+            .</p>
+        </div>
+
+        <div>
+          <img id="portrait" src="images/images/Portrait.png" alt="">
+        </div>
+
+       </div> 
+    </div>
   </section>
 
-<!-- What I like -->
-<section class="what I like" id="likes">
-  <h2 class="section_title"> About me</h2>
-  <div class="About me" href="a">
-    <h3>Habito
-    </h3>
-    <h3> Product Manager</h3>
+  <section>
+    <div class="container">
+      <div class="even-columns content extra-padding">
+        <div>
+          <h2 class="--fs-secondary-heading --fw-bold"></h2>
+          <p>
+            Not too long ago, Adam Tooze was an obscure academic. Now he’s among the world’s most influential financial commentators, with loyal readerships in Washington, London, Paris, and Brussels, as well as on Wall Street. Tooze’s readers turn to him for his uncanny ability to know which numbers on a spreadsheet matter, or when a trend has hit the point at which it has started to shape history. He looks at trade, currency, equities, wage, employment, debt, and commodities data and somehow makes sense of it—not just in the moment but in the sweep of time. “Economic events have had such a huge influence on politics this century,” Robert Skidelsky, the John Maynard Keynes biographer, told me. Tooze “illustrates the interpenetration of economic policy and political events. It’s as simple as that.”
 
-    <h3>11:FS
-    </h3>
-    <h3> Product Lead</h3>
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <h3>Palgrave Macmillan
-    </h3>
-    <h3>Editor: Econommics, Political Economy and Development Studies
-    </h3>
-  </div>
-</section>
+    <div class="container grey-background">  
+      <div class="content padding">
+          <ul class="numbered items" role="list">
+            <li>
+              <h3> The written word</h3>
+                <p>Adam's research, writing and teaching deal with the history of power in the modern age. The question that fascinates him is how economic and military power are articulated by politics, ideology and expert knowledge, in the struggle to bring order and shape to the modern world. In his first book, <a href="https://adamtooze.com/statistics-and-the-german-state/">Statistics and the German State</a>, he explored the new types of statistical knowledge that allowed the economy to be conceived as an object of government and the state to be thought of as a capable agent of national economic management. In the economic data available to contemporaries by the 1930s, the emergence of a new order structured around the preeminence of American economic power was unmistakable. <a href="https://adamtooze.com/the-wages-of-destruction/"> The Wages of Destruction</a> showed how this was essential to understanding the ambition and violence of the Hitler regime. <a href="https://adamtooze.com/the-deluge/">The Deluge</a> can be thought of as a global prequel to Wages. It explores how during and after World War I all the major world powers responded to the rise of American power. <a href="https://adamtooze.com/crashed/"> Crashed: How a Decade of Financial Crises Changed the World </a> changed everything for me, he maps the latest chapter in the story of trans-Atlantic political and economic relations, and manages to make it the most interesting thing you've ever read. Finally, Adam wrote <a href="https://adamtooze.com/shutdown/">Shutdown</a> as an immediate response to the COVID pandemic, and charted the response of financial institutions to a shutdown of the global economy.</p>
+            </li>
+            <li>
+              <h3> The spoken word</h3>
+                <p>Adam has an encyclopedic understanding of basically everything: from the COVID shutdown, to climate change, to pasta sauce. On his new podcast, Tooze and Foreign Policy deputy editor Cameron Abadi look at two data points each week that explain the world: one drawn from the week’s headlines and the other from just about anywhere else Tooze takes us. This is <a href="https://foreignpolicy.com/podcasts/ones-and-tooze/"> published every week</a>. He has also dazzled on <a href="https://www.talkingpoliticspodcast.com/blog/tag/Adam+Tooze"> Talking Politics</a>, and discussions with <a href="https://podcasts.apple.com/us/podcast/economics-needs-to-reckon-with-what-it-doesnt-know/id1548604447?i=1000535624450"> Ezra Klein</a>.
+                </p>
+            </li>
+            <li>
+              <h3> The Tweeted word</h3>
+                <p>Adam is a voracious <a href="https://twitter.com/adam_tooze?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Tweeter</a>, and aims to try provide snippets of clear analysis in rapid time, as some sort of paean to his favourite journalists. Further, he publishes a regular newsletter on <a href="https://adamtooze.substack.com/">Substack</a>.</p>
+              </li>
+          </ul>
+        </div>
+      </div>
 
-<!-- Contact me -->
-<section class="contact" id="contacty">
-  <div class="container" href="b">
-    <h2 class="section_title"> Don't be dumb</h2>
-      <a href="mailto: james.safford@gmail.com" target="_blank">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-      </a>
-
-      <a href="https://github.com/JamesSafford" target="_blank">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-
-      <a href="https://www.linkedin.com/in/james-safford/" target="_blank">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-      </a>
-
-      <a href="https://twitter.com/Jim_Safford" target="_blank">
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-      </a>
-
-  </div>
-</section>
+  </section>
+   
+  </main>
 
 
 </body>
-<footer> 
-  <div class="datetime">
-    <div class="time"></div>
-    <div class="date"></div>
+<footer class="container">
+  <div class="content padding"> 
+    <div class="datetime">
+      <p class="time"></p>
+      <P class="date"></P>
+    </div>
+  <div class="coffee">
+    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="JamesSafford" data-color="#40DCA5" data-emoji=""  data-font="Cookie" data-text="Buy Adam a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" >
+    </script>
+  </div>
+  <script src="js/index.js"></script>
 </div>
-<div class="coffee">
-  <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="JamesSafford" data-color="#40DCA5" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script></div>
 </footer>
 </html>

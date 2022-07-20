@@ -1,77 +1,212 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-:root{
-  --ff-primary: 'Ibarra Real Nova', serif;
-
-  --fw-reg:var(--ff-primary)
-  --ff-bold:var(--ff-primary)
-
-  --fs-h1: 3rem;
-  --fs-h2: 2rem;
-  --fs-h3: 1.5rem;
-  --fs-body: 1rem;
+html {
+  background: white;
 }
-@media (min-width: 800px){
-  :root {
-    --fs-h1: 3rem;
-    --fs-h2: 2rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1rem;
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 1240px;
+  width: 100%;
+}
+
+.padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.extra-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.twin-columns {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1280px) {
+  .content {
+    max-width: 960px;
+    margin: 0 20px 0 20px;
   }
 }
 
-/* General styles */
+@media only screen and (max-width: 600px) {
+  .content {
+    flex-direction: column-reverse !important;
+    text-align: center;
+  }
 
-body{
-  background-color: var(--clr-light);
-  color: var(--clr-dark);
-  margin: 0;
-  font-family: var(--ff-primary);
-  font-size: var(--fs-body);
-  line-height: 1.6;
-  padding-bottom:200px;   /* Height of the footer */
+  #portrait {
+    width: 100% !important;
+  }
+
+  footer div.content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  footer.coffee {
+    padding-bottom: 10px;
+  }
+
+
 }
 
-img {
-  display: block;
+.grey-background {
+  background: #ECE8E3;
+  box-shadow: 10px 5px 5px #ece8e3bb;
+}
+
+.head-container img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
+
+#portrait {
+  width: 50vw;
   max-width: 100%;
 }
 
-/* Typography */
-
-h1,
-h2,
-h3 {
-  line-height: 1.1;
-  margin: 0;
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  padding-bottom: 10px;
 }
 
-h1 { font-size: var(--fs-h1)}
-h2 { font-size: var(--fs-h2)}
-h3 { font-size: var(--fs-h3)}
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 40;
+}
 
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+/* footer */
 footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  border-top: 2px solid black;
-  background-color: white;
-  display: flex; /* or inline-flex */
+}
+
+footer p {
+  font-weight: bold;
+}
+
+footer div.content {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
-
-}
-
-.datetime{
-  font-size: var(--fs-body);
-}
-
-.contact{
-  line-height: 1.1;
-
 }
